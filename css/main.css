@@ -1,0 +1,22 @@
+.python-27-clock {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: darkgreen;
+    background-color: lightyellow;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
