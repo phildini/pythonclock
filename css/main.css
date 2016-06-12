@@ -20,3 +20,14 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
+
+.guido-button {
+    border: 1px;
+    background-color: black;
+    color: red;
+    border-radius: 5px;
+}
+
+.guido-button-block, .guido-button-block > button {
+    font-size: 8px;
+}
