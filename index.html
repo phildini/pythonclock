@@ -38,6 +38,7 @@
             <h1>Python 2.7 will retire in...</h1>
         </div>
         <div class="python-27-clock"></div>
+        <div class="progress" id="progress"></div>
         <div class="center">
             <div class="guido-button-block">
                 <button class="js-guido-mode guido-button">Enable Guido Mode</button><a href="https://youtu.be/YgtL4S7Hrwo?t=155">Huh?</a>
@@ -52,6 +53,7 @@
         <script src="js/moment.js"></script>
         <script src="js/jquery.plugin.min.js"></script>
         <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/progressbar.min.js"></script>
         <script>
             $(document).ready(function(){
                 var death = moment("20200101", "YYYYMMDD").utc().toDate();
@@ -66,6 +68,23 @@
                         "color": "red"
                     });
                 });
+
+                var line = new ProgressBar.Line('#progress', {
+                    color: '#ffde57',
+                    trailColor: '#646464'
+                });
+                function progress() {
+                    var now = new Date();
+                    var start = new Date("2010-07-03");
+                    var end = new Date("2020-01-01, 23:59:59");
+                    var done = (now-start) / (end-start);
+                    return done;
+                }
+                line.animate(progress());  // Number from 0.0 to 1.0
+                setInterval(update, 60000);
+                function update() {
+                    line.set(progress());
+                }
             });
         </script>
         <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>

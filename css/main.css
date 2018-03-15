@@ -5,6 +5,12 @@
     height: 100px;
 }
 
+.progress {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: darkgreen;
