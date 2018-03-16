@@ -5,7 +5,9 @@
 .countdown-rtl {
 	direction: rtl;
 }
-
+.countdown-holding span {
+	color: #888;
+}
 .countdown-row {
 	clear: both;
 	width: 100%;
