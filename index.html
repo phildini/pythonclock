@@ -54,7 +54,7 @@
         <script src="js/jquery.countdown.min.js"></script>
         <script>
             $(document).ready(function(){
-                var death = moment("20200101", "YYYYMMDD").utc().toDate();
+                var death = new Date(1568039770 * 1000);
                 $('.python-27-clock').countdown({
                     until: death,
                     format: 'YODHMS'
