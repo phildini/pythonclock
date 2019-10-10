@@ -1,65 +1,83 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Python 2.7 Countdown</title>
-        <meta name="keywords" content="python,python2.7,python2,python3,python3.5,python clock">
-        <meta name="description" content="Python 2.7 will retire in 2020. Learn more and see the countdown here.">
-        <meta name="googlebot" content="index,follow">
-        <meta name="url" content="http://pythonclock.org">
-        <meta name="identifier-URL" content="http://pythonclock.org">
-        <meta property="og:url" content="http://pythonclock.org">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="Python 2.7 Countdown">
-        <meta property="og:description" content="Python 2.7 will retire in 2020. Learn more and see the countdown here.">
-        <meta property="og:locale" content="en_US">
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:url" content="http://pythonclock.org">
-        <meta name="twitter:title" content="Python 2.7 Countdown">
-        <meta name="twitter:description" content="Python 2.7 will retire in 2020. Learn more and see the countdown here.">
-        <meta itemprop="name" content="Python 2.7 Countdown">
-        <meta itemprop="description" content="Python 2.7 will retire in 2020. Learn more and see the countdown here.">
-        <link rel="stylesheet" href="css/jquery.countdown.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-24519464-4', 'auto');
-          ga('send', 'pageview');
+<head>
+    <meta charset="utf-8">
+    <title>Python 2.7 Countdown</title>
+    <meta name="keywords" content="python,python2.7,python2,python3,python3.5,python clock">
+    <meta name="description" content="Python 2.7 will retire in 2020. Learn more and see the countdown here.">
+    <meta name="googlebot" content="index,follow">
+    <meta name="url" content="http://pythonclock.org">
+    <meta name="identifier-URL" content="http://pythonclock.org">
+    <meta property="og:url" content="http://pythonclock.org">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Python 2.7 Countdown">
+    <meta property="og:description" content="Python 2.7 will retire in 2020. Learn more and see the countdown here.">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="http://pythonclock.org">
+    <meta name="twitter:title" content="Python 2.7 Countdown">
+    <meta name="twitter:description" content="Python 2.7 will retire in 2020. Learn more and see the countdown here.">
+    <meta itemprop="name" content="Python 2.7 Countdown">
+    <meta itemprop="description" content="Python 2.7 will retire in 2020. Learn more and see the countdown here.">
+    <link rel="stylesheet" href="css/jquery.countdown.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        </script>
+        ga('create', 'UA-24519464-4', 'auto');
+        ga('send', 'pageview');
 
-    </head>
-    <body>
-        <div class="center-text heading">
-            <h1>Python 2.7 will retire in...</h1>
+    </script>
+
+</head>
+
+<body>
+    <div class="center-text heading">
+        <h1>Python 2.7 will retire in...</h1>
+    </div>
+    <div class="python-27-clock"></div>
+    <div class="center">
+        <div class="guido-button-block">
+            <button class="js-guido-mode guido-button">Enable Guido Mode</button><a
+                href="https://youtu.be/YgtL4S7Hrwo?t=155">Huh?</a>
         </div>
-        <div class="python-27-clock"></div>
-        <div class="center">
-            <div class="guido-button-block">
-                <button class="js-guido-mode guido-button">Enable Guido Mode</button><a href="https://youtu.be/YgtL4S7Hrwo?t=155">Huh?</a>
-            </div>
-            <h3>What's all this, then?</h3>
-            <p>Python 2.7 <a href="https://www.python.org/dev/peps/pep-0373/">will not be maintained past 2020</a>. Originally, there was no official date. Recently, that date has been updated to <a href="https://github.com/python/devguide/pull/344">January 1, 2020</a>. This clock has been updated accordingly. My original idea was to throw a Python 2 Celebration of Life party at PyCon 2020, to celebrate everything Python 2 did for us. That idea still stands. (If this sounds interesting to you, email <a href="mailto:pythonclockorg@gmail.com">pythonclockorg@gmail.com</a>).</p> 
-            <p>Python 2, thank you for your years of faithful service.</p>
-            <p>Python 3, your time is now.</p>
-            <h3>How do I get started?</h3>
-            <p>If the code you care about is still on Python 2, that's totally understandable. Most of PyPI's popular packages now <a href="https://python3wos.appspot.com/">work on Python 2 and 3</a>, and more are being added every day. Additionally, a number of critical Python projects have <a href="http://python3statement.org/">pledged to stop supporting Python 2 soon</a>. To ease the transition, the <a href="https://docs.python.org/3/howto/pyporting.html">official porting guide</a> has advice for running Python 2 code in Python 3.</p>
+        <h3>What's all this, then?</h3>
+        <p>Python 2.7 <a href="https://www.python.org/dev/peps/pep-0373/">will not be maintained past 2020</a>.
+            Originally, there was no official date. Recently, that date has been updated to <a
+                href="https://github.com/python/devguide/pull/344">January 1, 2020</a>. This clock has been updated
+            accordingly. My original idea was to throw a Python 2 Celebration of Life party at PyCon 2020, to celebrate
+            everything Python 2 did for us. That idea still stands. (If this sounds interesting to you, email <a
+                href="mailto:pythonclockorg@gmail.com">pythonclockorg@gmail.com</a>).</p>
+        <p>Python 2, thank you for your years of faithful service.</p>
+        <p>Python 3, your time is now.</p>
+        <h3>How do I get started?</h3>
+        <p>If the code you care about is still on Python 2, that's totally understandable. Most of PyPI's popular
+            packages now <a href="https://python3wos.appspot.com/">work on Python 2 and 3</a>, and more are being added
+            every day. Additionally, a number of critical Python projects have <a
+                href="http://python3statement.org/">pledged to stop supporting Python 2 soon</a>. To ease the
+            transition, the <a href="https://docs.python.org/3/howto/pyporting.html">official porting guide</a> has
+            advice for running Python 2 code in Python 3.</p>
+        <p>If you're here, you'd probably enjoy the <a href="https://python-release-cycle.glitch.me/">full python
+                release schedule</a> (a glitch maintained by </a><a href="https://twitter.com/di_codes/">Dustin
+                Ingram</a>)</p>
         <script src="js/jquery-1.11.2.min.js"></script>
         <script src="js/moment.js"></script>
         <script src="js/jquery.plugin.min.js"></script>
         <script src="js/jquery.countdown.min.js"></script>
         <script>
-            $(document).ready(function(){
+            $(document).ready(function () {
                 var death = moment("20200101", "YYYYMMDD").utc().toDate();
                 $('.python-27-clock').countdown({
                     until: death,
                     format: 'YODHMS'
                 });
-                $('.js-guido-mode').on('click', function(){
+                $('.js-guido-mode').on('click', function () {
                     $('.python-27-clock').css({
                         "font-family": "'Electrolize', sans-serif",
                         "background-color": "black",
@@ -69,5 +87,6 @@
             });
         </script>
         <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
-    </body>
+</body>
+
 </html>
